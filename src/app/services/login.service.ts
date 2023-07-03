@@ -9,7 +9,7 @@ export class LoginService {
   hostBase: string;
 
   constructor(private http: HttpClient) {
-    this.hostBase = "http://localhost:3000/api/usuario/"
+    this.hostBase = "http://3.235.121.203:3000/api/usuario/"
   }
 
   public login(username: string, password: string): Observable<any> {

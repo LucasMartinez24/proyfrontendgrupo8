@@ -8,8 +8,8 @@ import { DatosMedicos } from '../models/datos-medicos';
 })
 export class DatosMedicosServiceService {
   urlBase:string
-  constructor(private _http: HttpClient) { 
-    this.urlBase = "http://localhost:3000/api/datosMedicos/";
+  constructor(private _http: HttpClient) {
+    this.urlBase = "http://3.235.121.203:3000/api/datosMedicos/";
   }
   addDatosMedicos(datosMedicos: DatosMedicos):Observable<any>{
     let httpOptions={
