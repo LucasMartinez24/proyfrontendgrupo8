@@ -16,7 +16,7 @@ export class TokenInterceptorService implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    if (req.url.indexOf('3.235.121.203', 0) >= 0) {
+    if (req.url.indexOf('localhost:3000', 0) >= 0) {
       const tokenizeReq = req.clone({
         setHeaders: {
           Authorization: `Bearer ${this.loginService.getToken()}`,
